@@ -1,0 +1,24 @@
+{
+  "name": "b9a6-retro-forum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zubayda1425/B9A6-Retro-Forum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zubayda1425/B9A6-Retro-Forum/issues"
+  },
+  "homepage": "https://github.com/Zubayda1425/B9A6-Retro-Forum#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
