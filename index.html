@@ -8,16 +8,79 @@
 
     <!-- tailwind -->
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.2/daisyui.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
+
+    <!-- Font: Mulish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/7150fbc846.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+    </style>
 
 </head>
 
-<body>
+<body class="mx-10 md:mx-36  mt-14">
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <h1 class="text-4xl font-black">ReTro</h1>
+            </div>
 
+            <!-- For Desktop -->
+
+            <div class="hidden md:block">
+                <div class="flex gap-3  items-center md:">
+                    <div class="size-14 bg-[#12132D08] rounded-full border-nav tooltip" data-tip="Home">
+                        <img class=" object-scale-down size-14" src="images/Icon/Home.png" alt="">
+                    </div>
+                    <div class="size-14 bg-[#12132D08] rounded-full border-nav tooltip" data-tip="Edit">
+                        <img class=" object-scale-down size-14" src="images/Icon/write.png" alt="">
+                    </div>
+                    <div class="size-14 bg-[#12132D08] rounded-full border-nav tooltip" data-tip="Add Profile">
+                        <img class=" object-scale-down size-14" src="images/Icon/profile.png" alt="">
+                    </div>
+                    <div class="size-14 bg-[#12132D08] rounded-full border-nav tooltip" data-tip="Flag">
+                        <img class=" object-scale-down size-14" src="images/Icon/flag.png" alt="">
+                    </div>
+                    <div>
+                        <button class="rounded-full bg-[#797DFC] px-8 py-3 font-semibold text-white tooltip"
+                            data-tip="Sign In">Sign
+                            In</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- For Mobile -->
+            <div class="md:hidden">
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-bars"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Sign In</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>Edit</a></li>
+                        <li><a>Add Profile</a></li>
+                        <li><a>Flag</a></li>
+                    </ul>
+                </details>
+
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
