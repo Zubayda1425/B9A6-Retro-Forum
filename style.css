@@ -7,3 +7,10 @@
     border: 1px solid #12132D1A;
 }
 
+
+
+#menu_container{
+    transition:all 0.5s;
+}
+
+
