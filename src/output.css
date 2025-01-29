@@ -377,9 +377,6 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --color-txt-bold: #12132D;
-    --color-txt: #12132DCC;
-    --color-contentBG: #F3F3F5;
   }
 }
 @layer base {
@@ -1533,6 +1530,9 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#\#F3F3F5\] {
+    background-color: ##F3F3F5;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
@@ -1550,9 +1550,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-contentBG {
-    background-color: var(--color-contentBG);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -1960,14 +1957,11 @@
   .text-\[\#12132DCC\] {
     color: #12132DCC;
   }
+  .text-\[\#12132D\] {
+    color: #12132D;
+  }
   .text-transparent {
     color: transparent;
-  }
-  .text-txt {
-    color: var(--color-txt);
-  }
-  .text-txt-bold {
-    color: var(--color-txt-bold);
   }
   .text-white {
     color: var(--color-white);
